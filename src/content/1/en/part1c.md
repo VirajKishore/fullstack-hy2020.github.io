@@ -218,6 +218,9 @@ let counter = 1
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
+const rootElement = document.getElementById('root');
+const root = ReactDOM.createRoot(rootElement);
+
 const refresh = () => {
   root.render(
     <App counter={counter} />
